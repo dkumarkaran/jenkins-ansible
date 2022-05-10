@@ -2,5 +2,5 @@
 - name: hosts defined
   hosts: webserver
   tasks:
-    - name: copy_task
-      copy: src=/home/ubuntu/1.txt dest=/home/ubuntu/2.txt
+    - name: apache2
+      apt: name=apache2 state=latest update_cache=yes
